@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="images/libraryicon.png"/>
+	
+	<title>
+		Online Library
+	</title>
+</head>
+
+<body class="loginpagebdy">
+	
+	<div class ="wrapper">
+		<form action="">
+			<center><img class="logo" src="images/logo.png" ></center>
+
+			<h1 class=""> Welcome to</h1> <h1><br>Juan Basangan National High School</h1>
+
+			<div class="inputbox">
+				<input id="username" type="text" placeholder="Username" required >
+				<i class='bx bxs-user-pin'></i>
+
+			</div>
+
+			<div class="inputbox">
+				<input id="password" type="password" placeholder="Password" required>
+				<i class='bx bxs-lock-alt' ></i>
+
+			</div>
+				
+			
+			
+			<div class="remember-forgot">
+			<label ><input type="checkbox" onclick="myFunction()">Show Password</label> 
+			<button type="button" class="btn" onclick="login()">Login</button>
+			<a href="#" onclick="alrt()">Forgot Password</a>
+			</div>
+
+	
+
+
+			</form>
+	
+	</div>
+
+
+
+<!--script-->
+
+  <script>
+     function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === 'heartcute' && password === 'charot') {
+         window.location.href = 'grade7.html';
+   	
+      }
+      else if (username === 'tofu' && password === 'dahyun') {
+         window.location.href = 'https://www.facebook.com';
+   
+      }
+       else if (username === 'niel2k' && password === 'niel2k17') {
+         window.location.href = 'grade7.html';
+   
+      }else {
+        alert('Invalid Username or Password. Please try again.');
+      }
+    }
+
+
+    function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function alrt() {
+	alert('Please ask the Admin for Password.');
+
+}
+
+  </script>
+
+	</body>
+	
+
+
+
+	</html>
+
